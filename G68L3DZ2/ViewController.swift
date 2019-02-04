@@ -12,7 +12,14 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+       //Zadanie 2.1
+        var cena: Double = 24
+        for _ in 1...193{
+            cena = cena + (cena*0.06)
+        }
+        print("Накопилось бы ", cena, "$")
+        
     }
 
 
