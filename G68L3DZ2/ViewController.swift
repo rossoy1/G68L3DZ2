@@ -20,8 +20,22 @@ class ViewController: UIViewController {
         }
         print("Накопилось бы ", cena, "$")
         
-    }
+        //Zadanie 2.2
+        var stipendiya: Double = 700
+        var rashodi: Double = 1000
+        var nuzhnoDeneg: Double
+        var rashod: Double = 1000
+        
+        for _ in 1..<10{
+            rashod = rashod+(rashod*0.03)
+            rashodi = rashodi+rashod
+        }
+            stipendiya = stipendiya*10
+        nuzhnoDeneg = rashodi-stipendiya
+        
+        print("Нужно денег, для того чтобы прожить: ", nuzhnoDeneg)
+    
 
 
 }
-
+}
