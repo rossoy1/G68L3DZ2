@@ -34,8 +34,30 @@ class ViewController: UIViewController {
         nuzhnoDeneg = rashodi-stipendiya
         
         print("Нужно денег, для того чтобы прожить: ", nuzhnoDeneg)
-    
+        
+        //Zadanie 2.3
+        var stipuha: Double = 700
+        var nakopleniya: Double = 2400
+        var rashodik: Double = 1000
+
+        print("Можно прожить: " ,counterMesyatsev(a: stipuha, b: nakopleniya, c:rashodik), "месяцев")
+      
 
 
 }
+    func counterMesyatsev(a: Double, b: Double, c:Double) -> Int{
+        var d = c
+        var rashodiki: Double = 0
+        var mesyatsi = 0
+        while  b > rashodiki {
+            d = d+(d*0.03)
+            rashodiki = rashodiki+c-a
+            mesyatsi = mesyatsi + 1
+            
+            
+        }
+        return mesyatsi
+        
+    }
+    
 }
